@@ -29,6 +29,10 @@
 **/
 #define CMD_DELIMITER '#'
 
+/**
+@brief arg delimiter 
+**/
+#define ARG_DELIMITER ';'
 
 
 
@@ -66,7 +70,7 @@ Cmd_t parse(char* msg){
 	bool argF=false ;
 	for(i=0;i<strlen(msg);i++){//parse cmd
 		cmd.cmd[i]=msg[i];
-		if(msg[i]==';'){
+		if(msg[i]==ARG_DELIMITER){
 			argF=true;
 			break;
 		}
