@@ -87,7 +87,9 @@ Cmd_t parse(char* msg){
 		cmd.param[index]=msg[i];
 		index++;
 	}
-	cmd.param[index]='\0';
+	if(index!=0){
+		cmd.param[index]='\0';
+	}
 	
 	return cmd;//if no cmd or no arg
 }

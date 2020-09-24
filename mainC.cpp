@@ -25,7 +25,7 @@ using namespace std;
 **/
 
 int main(int argc, char *argv[]){
-	char msg[]="test#";//msg to send to server
+	char msg[]="adc;read";//msg to send to server
 	cout<<"main Client start\n";
 
 	
